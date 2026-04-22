@@ -3,65 +3,46 @@ Name: Aditi Gore
 PRN: 24070521233
 ```
 
-# Experiment 1: Basic Linux Commands
-
-## Aim
+Experiment 1: Basic Linux Commands
+Aim
 To implement basic Linux commands on Ubuntu.
----
-
-## Theory
-Linux is a Unix-based operating system. All interactions happen through the terminal using commands. The file system is organized as a tree starting from the root `/`. Every file and directory has permissions (read, write, execute) assigned to the owner, group, and others.
+Theory
+Linux is a Unix-based operating system. All interactions happen through the terminal using commands. The file system is organized as a tree starting from the root /. Every file and directory has permissions (read, write, execute) assigned to the owner, group, and others.
 
 Key concepts:
-- **Shell**: The command interpreter (e.g., bash) that reads and executes commands.
-- **Directory**: A folder that contains files or other directories.
-- **Path**: The location of a file or directory. Absolute paths start with `/`; relative paths start from the current directory.
-- **Permissions**: Each file has read (r), write (w), and execute (x) permissions for owner, group, and others.
 
----
-
-## Commands Reference
-
-### Navigation & File Management
-
-| Command | Description |
-|---|---|
-| `pwd` | Print the current working directory |
-| `ls` | List files in current directory |
-| `ls -la` | List all files including hidden, with permissions |
-| `cd <path>` | Change directory to specified path |
-| `mkdir <name>` | Create a new directory |
-| `touch <file>` | Create an empty file |
-| `cp <src> <dest>` | Copy file or folder |
-| `mv <src> <dest>` | Move or rename a file/directory |
-| `rm <file>` | Remove a file |
-| `rm -rf <path>` | Remove directory and its contents recursively |
-
-### File Operations
-
-| Command | Description |
-|---|---|
-| `cat <file>` | Print file contents to terminal |
-| `grep "pattern" <file>` | Search for a text pattern in a file |
-| `nano <file>` | Open file in nano text editor |
-| `vi <file>` | Open file in vi text editor |
-| `tail -f <file>` | Show last lines of file, update live |
-
-### Permissions & System
-
-| Command | Description |
-|---|---|
-| `chmod 755 <file>` | Set read/write/execute permissions |
-| `chown user:group <file>` | Change file ownership |
-| `sudo <command>` | Run command with root/admin privileges |
-| `df -h` | Show disk usage in human-readable format |
-| `top` | Live view of system processes and resource usage |
-
----
-
-## Commands with Examples
-
-```bash
+Shell: The command interpreter (e.g., bash) that reads and executes commands.
+Directory: A folder that contains files or other directories.
+Path: The location of a file or directory. Absolute paths start with /; relative paths start from the current directory.
+Permissions: Each file has read (r), write (w), and execute (x) permissions for owner, group, and others.
+Commands Reference
+Navigation & File Management
+Command	Description
+pwd	Print the current working directory
+ls	List files in current directory
+ls -la	List all files including hidden, with permissions
+cd <path>	Change directory to specified path
+mkdir <name>	Create a new directory
+touch <file>	Create an empty file
+cp <src> <dest>	Copy file or folder
+mv <src> <dest>	Move or rename a file/directory
+rm <file>	Remove a file
+rm -rf <path>	Remove directory and its contents recursively
+File Operations
+Command	Description
+cat <file>	Print file contents to terminal
+grep "pattern" <file>	Search for a text pattern in a file
+nano <file>	Open file in nano text editor
+vi <file>	Open file in vi text editor
+tail -f <file>	Show last lines of file, update live
+Permissions & System
+Command	Description
+chmod 755 <file>	Set read/write/execute permissions
+chown user:group <file>	Change file ownership
+sudo <command>	Run command with root/admin privileges
+df -h	Show disk usage in human-readable format
+top	Live view of system processes and resource usage
+Commands with Examples
 # 1. Print current working directory
 pwd
 # Output: /home/user
@@ -122,12 +103,7 @@ cd ..
 
 # 16. Remove the directory and all its contents
 rm -rf myFolder
-```
-
----
-
-## Output
-```
+Output
 Output:
 
 $ pwd
@@ -169,4 +145,3 @@ $ rm renamed.txt
 $ cd ..
 
 $ rm -rf myFolder
-```
