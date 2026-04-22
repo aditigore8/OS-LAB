@@ -1,6 +1,6 @@
 ```c
-Name: Ritika Bhoyar
-PRN: 24070521225
+Name: Aditi Gore
+PRN: 24070521233
 ```
 
 # Experiment 8: FIFO Page Replacement Algorithm
